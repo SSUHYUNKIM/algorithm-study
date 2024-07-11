@@ -5,8 +5,7 @@
 
 using namespace std;
 
-int solution(vector<int> nums)
-{
+int solution(vector<int> nums) {
     int max = nums.size() / 2;
     unordered_set<int> nums_set(nums.begin(), nums.end());
     
