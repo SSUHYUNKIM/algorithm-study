@@ -1,19 +1,25 @@
-#include <iostream>
+import java.util.Scanner;
 
-using namespace std;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        String age_type = sc.next();
+        int answer = 0;
 
-int main(void) {
-    int year, answer;
-    string age_type;
-    cin >> year >> age_type;
+        if (age_type.equals(
+                "Korea"
+        )) {
+            answer =
+                    2030 - year + 1
+            ;
+        }
+        else if (age_type.equals("Year")) {
 
-    if (age_type == "Korea") {
-        answer = 2030 - year + 1;
+            answer = 2030 - year
+            ;
+        }
+
+        System.out.println(answer);
     }
-    else if (age_type == "Year") {
-        answer = 2030 - year;
-    }
-
-    cout << answer << endl;
-    return 0;
 }
