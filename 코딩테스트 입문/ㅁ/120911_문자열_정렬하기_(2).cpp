@@ -1,3 +1,5 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/120911
+
 #include <string>
 #include <vector>
 #include <cctype>
@@ -18,3 +20,5 @@ string solution(string my_string) {
     }
     return answer;
 }
+
+// 블로그 : tolower(c++)
